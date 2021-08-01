@@ -5,8 +5,9 @@ function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-submitBtn.addEventListener("click", function () {
+submitBtn.addEventListener("click", function (e) {
   if (!isValidEmail(emailInputElement.value)) {
+    e.preventDefault();
     emailInputElement.style.border = "1px solid hsl(354, 100%, 66%)";
     emailInputElement.nextElementSibling.textContent = "Please provide a valid email address";
   } else {
