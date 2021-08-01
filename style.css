@@ -7,4 +7,106 @@
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.25rem;
+  height: 100vh;
+}
+
+.highlight {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4em 0 2em 0;
+  text-align: center;
+}
+
+header img {
+  width: 20%;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  margin-bottom: 0.75em;
+}
+
+main p {
+  color: hsl(209, 33%, 12%);
+  font-size: 0.875rem;
+  margin-bottom: 2em;
+}
+
+input {
+  display: block;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0 auto 1em auto;
+  padding: 0.75em 1em;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 24px;
+}
+
+input[type="email"] {
+  border: 1px solid hsl(223, 100%, 88%);
+  color: hsl(223, 100%, 88%);
+  padding-left: 2em;
+  outline: none;
+}
+
+input[type="email"]::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+input[type="email"]:focus::placeholder {
+  color: transparent;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  margin-bottom: 6em;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(223, 100%, 88%);
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 10em;
+}
+
+.social-links {
+  margin-bottom: 1.5em;
+}
+
+.social-links a {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid hsl(223, 100%, 88%);
+  font-size: 1rem;
+  color: hsl(223, 87%, 63%);
+  line-height: 2em;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+}
+
+.social-links a:hover {
+  border: 1px solid hsl(223, 87%, 63%);
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+
+footer p {
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 59%);
 }
